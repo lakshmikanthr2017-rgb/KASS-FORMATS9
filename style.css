@@ -1,0 +1,243 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #dbe2e8;
+    margin: 0;
+    padding: 20px;
+    color: #111;
+}
+
+.action-bar {
+    max-width: 210mm;
+    margin: 0 auto 15px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-print {
+    background-color: #0056b3;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-action {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-del {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    padding: 2px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* A4 Sheet Setup */
+.a4-page {
+    background: #ffffff;
+    width: 210mm;
+    min-height: 295mm;
+    margin: 0 auto 20px auto;
+    padding: 12mm 15mm;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.page-break {
+    page-break-before: always;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.header h3, .header h2, .header h4 {
+    margin: 2px 0;
+}
+
+.sub-title {
+    font-weight: bold;
+}
+
+.english-title {
+    font-size: 11px;
+    font-style: italic;
+}
+
+.instructions, .attachments {
+    font-size: 11px;
+    background-color: #f8f9fa;
+    border: 1px solid #000;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+}
+
+.instructions ol, .attachments ol {
+    margin: 2px 0 0 18px;
+    padding: 0;
+}
+
+/* Tables */
+.kass-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.kass-table th, .kass-table td {
+    border: 1px solid #000 !important;
+    padding: 5px 6px;
+    font-size: 11px;
+}
+
+.kass-table th {
+    background-color: #f0f0f0;
+}
+
+.compact-table th, .compact-table td {
+    padding: 3px 5px !important;
+    font-size: 11px !important;
+}
+
+/* Custom taller row height for Form B, Form C, and Summary Sheet tables */
+.tall-row-table th, .tall-row-table td {
+    padding: 7px 6px !important;
+    font-size: 11px !important;
+    height: 24px;
+}
+
+.kass-table input, .kass-table textarea {
+    width: 100%;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 11px;
+    font-family: inherit;
+    background: #fdfdfd;
+    box-sizing: border-box;
+}
+
+/* Readonly fields styling */
+.kass-table input[readonly] {
+    background-color: #f3f4f6;
+    color: #222;
+    font-weight: 600;
+}
+
+.kass-table input:focus, .kass-table textarea:focus {
+    border: 1px solid #0056b3;
+    background: #ffffff;
+}
+
+/* Declarations & Signature Styles */
+.borderless-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+}
+
+.borderless-table td {
+    border: none !important;
+    padding: 2px 0;
+    vertical-align: bottom;
+}
+
+.inline-input {
+    border: none;
+    border-bottom: 1px dashed #000;
+    outline: none;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 1px 4px;
+}
+
+.declaration-block {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 12px;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.declaration-block h3 {
+    margin-top: 0;
+    font-size: 12px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 4px;
+}
+
+.declaration-text {
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.signature-block-small {
+    text-align: right;
+    font-size: 11px;
+    margin: 3px 0 8px 0;
+}
+
+.footer-meta {
+    position: absolute;
+    bottom: 8mm;
+    left: 15mm;
+    right: 15mm;
+    border-top: 1px solid #000;
+    padding-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: bold;
+    color: #111;
+}
+
+/* Print Overrides */
+@media print {
+    body {
+        background: none;
+        padding: 0;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    .a4-page {
+        box-shadow: none;
+        width: 100%;
+        margin: 0;
+        padding: 8mm 12mm;
+    }
+
+    @page {
+        size: A4 portrait;
+        margin: 0;
+    }
+
+    .kass-table th, .kass-table td {
+        border: 1px solid #000 !important;
+    }
+
+    .kass-table input, .kass-table textarea {
+        border: none;
+        background: transparent;
+        font-weight: bold;
+    }
+
+    .kass-table input[readonly] {
+        background: transparent;
+    }
+}
