@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KASS Complete Forms - Karnataka Arogya Sanjeevani Scheme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="no-print action-bar">
+        <button onclick="addFamilyRow()" class="btn-action">+ Add Dependent Member</button>
+        <button onclick="window.print()" class="btn-print">🖨️ Print / Save as PDF (A4)</button>
+    </div>
+
+    <!-- ================= PAGE 1: FORM A (EMPLOYEE DETAILS) ================= -->
+    <div class="a4-page">
+        <div class="header">
+            <h3>ಅನುಬಂಧ-1</h3>
+            <p>ಸರ್ಕಾರದ ಆದೇಶ ಸಂಖ್ಯೆ: ಸಿಆಸುಇ 16 ಎಸ್‌ಎಂಆರ್ 2020 (ಭಾ-5) ದಿನಾಂಕ:09.03.2023</p>
+            <h2>FORM: A</h2>
+            <p class="sub-title">(ದ್ವಿಪ್ರತಿಯಲ್ಲಿ ಸಲ್ಲಿಸುವುದು)</p>
+            <h4>ಕರ್ನಾಟಕ ಆರೋಗ್ಯ ಸಂಜೀವಿನಿ ಯೋಜನೆಗೆ ಒಳಪಡಲು ಅರ್ಹ ಸರ್ಕಾರಿ ನೌಕರ ಸಲ್ಲಿಸಬೇಕಾದ ಅರ್ಜಿ ನಮೂನೆ</h4>
+            <p class="english-title">Form of application to be submitted by eligible government employee for enrollment into the Karnataka Arogya Sanjeevani Scheme (KASS)</p>
+        </div>
+
+        <div class="instructions">
+            <strong>ಸೂಚನೆ:</strong>
+            <ol>
+                <li>ಗಣಕಯಂತ್ರದಲ್ಲಿ ಅಳವಡಿಸಲು ಅನುಕೂಲವಾಗುವಂತೆ ಎಲ್ಲಾ ವಿವರಗಳನ್ನು ಆಂಗ್ಲ ಭಾಷೆಯಲ್ಲಿ ಕೂಡ ಒದಗಿಸುವುದು.</li>
+                <li>ಒಂದು ಪ್ರತಿಯನ್ನು ನೌಕರರ ಸೇವಾ ಪುಸ್ತಕದಲ್ಲಿ ಸಂರಕ್ಷಿಸಿಡುವುದು ಹಾಗೂ ಮತ್ತೊಂದು ಪ್ರತಿಯನ್ನು ನೌಕರರು ತನ್ನ ದಾಖಲೆಗೆ ಇರಿಸಿಕೊಳ್ಳತಕ್ಕದ್ದು.</li>
+            </ol>
+        </div>
+
+        <table class="kass-table">
+            <tr>
+                <th style="width: 6%;">ಕ್ರ.ಸಂ</th>
+                <th style="width: 44%;">ವಿವರಗಳು (Details)</th>
+                <th style="width: 50%;">ಮಾಹಿತಿ (Employee Inputs)</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ಸರ್ಕಾರಿ ನೌಕರರ ಹೆಸರು (CAPITAL LETTERS)<br><small>Employee Name</small></td>
+                <td><input type="text" value="LAKSHMIKANTH R"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>ತಂದೆ / ಪತಿಯ ಹೆಸರು<br><small>Father's / Husband's Name</small></td>
+                <td><input type="text" value=""></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>ಸರ್ಕಾರಿ ನೌಕರರ ಕೆ.ಜಿ.ಐ.ಡಿ. ಸಂಖ್ಯೆ (As in HRMS)<br><small>KGID Number</small></td>
+                <td><input type="text" value="1958636"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>ಮೊಬೈಲ್ ದೂರವಾಣಿ ಸಂಖ್ಯೆ<br><small>Mobile Number</small></td>
+                <td><input type="tel" value="9844444871"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>ಇಮೇಲ್ ಐಡಿ (email ID)<br><small>Email Address</small></td>
+                <td><input type="email" value=""></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>ಆಧಾ‌ರ್ ಸಂಖ್ಯೆ<br><small>Aadhaar Number</small></td>
+                <td><input type="text" value="491287273375"></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>ಹುದ್ದೆಯ ಮೇಲಿನ ಹಕ್ಕನ್ನು ಹೊಂದಿರುವ (Lien) ಹುದ್ದೆ ಹಾಗೂ ವೇತನ ಶ್ರೇಣಿ<br><small>Designation & Pay Scale</small></td>
+                <td><input type="text" value=""></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>ಸರ್ಕಾರಿ ನೌಕರರ ಮನೆ ವಿಳಾಸ<br><small>Residential Address</small></td>
+                <td><textarea rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>ಪ್ರಸ್ತುತ ಪಡೆಯುತ್ತಿರುವ ಮೂಲವೇತನ<br><small>Present Basic Pay</small></td>
+                <td><input type="text" value=""></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>ಸರ್ಕಾರಿ ನೌಕರರ ಮಾತೃ ಇಲಾಖೆ<br><small>Parent Department</small></td>
+                <td><input type="text" value=""></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>ಸ್ವತಂತ್ರ ಪ್ರಭಾರದಲ್ಲಿ ಉನ್ನತ ಹುದ್ದೆಯಲ್ಲಿದ್ದಲ್ಲಿ ಪದನಾಮ ಮತ್ತು ವೇತನ ಶ್ರೇಣಿ<br><small>Higher Post Charge</small></td>
+                <td><input type="text" value="NOT APPLICABLE"></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>ಕರ್ತವ್ಯ ನಿರ್ವಹಿಸುತ್ತಿರುವ ಇಲಾಖೆ ಮತ್ತು ಕಚೇರಿ<br><small>Working Office Details</small></td>
+                <td><input type="text" value=""></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>ನಿಯೋಜನೆ ಮೇರೆಗೆ ಇತರೆ ಇಲಾಖೆಯಲ್ಲಿದ್ದಲ್ಲಿ ಮಾತೃ ಇಲಾಖೆ<br><small>Deputation Details</small></td>
+                <td><input type="text" value="NOT APPLICABLE"></td>
+            </tr>
+        </table>
+
+        <div class="footer-meta">
+            <span>Form Reference: DPAR 16 SMR 2020 (Part-5)</span>
+            <span class="prepared-by">Prepared by : LAKSHMIKANTH R (Mob:9844444871)</span>
+        </div>
+    </div>
+
+    <!-- ================= PAGE 2: FAMILY & DEPENDENTS ================= -->
+    <div class="a4-page page-break">
+        <h3 class="section-heading">ಕುಟುಂಬದ ಸದಸ್ಯರ ವಿವರಗಳು (Family Members & Dependents Details)</h3>
+        
+        <table class="kass-table">
+            <tr>
+                <td style="width: 5%;">14</td>
+                <td style="width: 45%;">ಕುಟುಂಬದ ಸದಸ್ಯರು ಬೇರೆ ಯಾವುದಾದರೂ ಆರೋಗ್ಯ ಯೋಜನೆ/ಖಾಸಗಿ ವಿಮೆಗೆ ಒಳಪಟ್ಟಿರುವರೇ?</td>
+                <td style="width: 50%;"><input type="text" value="ಇಲ್ಲ / NO"></td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>ಕುಟುಂಬದ ಸದಸ್ಯರು ಸರ್ಕಾರಿ ಸೇವೆಯಲ್ಲಿದ್ದು KASS ಯೋಜನೆಯಲ್ಲಿ ನೋಂದಾಯಿಸಲ್ಪಟ್ಟಿರುವರೇ?</td>
+                <td><input type="text" value="ಇಲ್ಲ / NO"></td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>ಪತಿ ಅಥವಾ ಪತಿಯ ಉದ್ಯೋಗದ ವಿವರಗಳು / ಗೃಹಿಣಿ</td>
+                <td><input type="text" value=""></td>
+            </tr>
+        </table>
+
+        <h4>ಕುಟುಂಬದ ಸದಸ್ಯರ ಪಟ್ಟಿ (Dependents List)</h4>
+        <table class="kass-table" id="familyTable">
+            <thead>
+                <tr>
+                    <th style="width: 5%;">ಕ್ರ.ಸಂ</th>
+                    <th style="width: 25%;">ಸಂಬಂಧ (Relation)</th>
+                    <th style="width: 30%;">ಹೆಸರು (Name)</th>
+                    <th style="width: 20%;">ಜನ್ಮ ದಿನಾಂಕ (DOB)</th>
+                    <th style="width: 20%;">ಆಧಾರ್ ಸಂಖ್ಯೆ (Aadhaar)</th>
+                    <th class="no-print" style="width: 5%;">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><input type="text" value="Spouse / ಪತಿ / ಪತ್ನಿ"></td>
+                    <td><input type="text" value=""></td>
+                    <td><input type="date"></td>
+                    <td><input type="text" value=""></td>
+                    <td class="no-print"><button type="button" onclick="deleteRow(this)" class="btn-del">X</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><input type="text" value="Father / ತಂದೆ"></td>
+                    <td><input type="text" value=""></td>
+                    <td><input type="date"></td>
+                    <td><input type="text" value=""></td>
+                    <td class="no-print"><button type="button" onclick="deleteRow(this)" class="btn-del">X</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><input type="text" value="Mother / ತಾಯಿ"></td>
+                    <td><input type="text" value=""></td>
+                    <td><input type="date"></td>
+                    <td><input type="text" value=""></td>
+                    <td class="no-print"><button type="button" onclick="deleteRow(this)" class="btn-del">X</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="attachments">
+            <strong>ಲಗತ್ತುಗಳು (Attachments Required):</strong>
+            <ol>
+                <li>ಸರ್ಕಾರಿ ನೌಕರರ ಹಾಗೂ ಕುಟುಂಬದ ಅರ್ಹ ಸದಸ್ಯರ ಭಾವಚಿತ್ರಗಳು.</li>
+                <li>ಆಧಾರ್ ಕಾರ್ಡ್‌ಗಳ ಪ್ರತಿಗಳು.</li>
+                <li>ವೇತನ ಚೀಟಿ (Pay Slip).</li>
+                <li>ವಯಸ್ಸಿನ ಪುರಾವೆ / ಕಾನೂನು ದಾಖಲೆಗಳು (ದತ್ತು, ವಿವಾಹ ಇತ್ಯಾದಿ).</li>
+            </ol>
+        </div>
+
+        <div class="footer-meta">
+            <span>KASS - Family Details</span>
+            <span class="prepared-by">Prepared by : LAKSHMIKANTH R (Mob:9844444871)</span>
+        </div>
+    </div>
+
+    <!-- ================= PAGE 3: DECLARATIONS FORM A1 & A2 ================= -->
+    <div class="a4-page page-break">
+        <div class="declaration-block">
+            <h3>FORM: A1 - ಸರ್ಕಾರಿ ನೌಕರರ ಸ್ವಯಂ ಘೋಷಣೆ (Employee Self Declaration)</h3>
+            <p>1. ನಾನು ಮೇಲೆ ಒದಗಿಸಿರುವ ಎಲ್ಲಾ ಮಾಹಿತಿಗಳು ನಿಜವಾಗಿರುತ್ತವೆ.</p>
+            <p>2. ನಾನು ಸ್ವಂತಕ್ಕೆ ಹಾಗೂ ನನ್ನ ಕುಟುಂಬದ ಸದಸ್ಯರಿಗೆ ಈ ಯೋಜನೆಯಿಂದ ಭರಿಸುವ ವೆಚ್ಚವನ್ನು ಬೇರಾವುದೇ ಮೂಲಗಳಿಂದ ಪಾವತಿಸಿಕೊಳ್ಳುವುದಿಲ್ಲ.</p>
+            <p>3. ನನ್ನ ಪತಿ/ಪತ್ನಿ/ಮಕ್ಕಳು ಈ ಯೋಜನೆಯಡಿ ನೋಂದಾಯಿತರಾಗಿರುತ್ತಾರೆ.</p>
+            <p>4. ನಾನು ಮತ್ತು ನನ್ನ ಕುಟುಂಬದ ಸದಸ್ಯರು ಬೇರೆ ಯಾವುದೇ ಆರೋಗ್ಯ ಯೋಜನೆ ಅಥವಾ ವಿಮೆಗೆ ಒಳಪಟ್ಟಿರುವುದಿಲ್ಲ.</p>
+            <p>5. ನನ್ನ ಕುಟುಂಬದಲ್ಲಿ ಯಾವುದೇ ಬದಲಾವಣೆಗಳಾದಲ್ಲಿ (ಮದುವೆ, ಜನನ, ಮರಣ) ಕಾಲಕಾಲಕ್ಕೆ ಮಾಹಿತಿ ಒದಗಿಸಲು ಬದ್ಧನಾಗಿರುತ್ತೇನೆ.</p>
+            <p>6. ನಾನು KASS ಯೋಜನೆಯ ಎಲ್ಲಾ ಷರತ್ತು ಮತ್ತು ನಿಬಂಧನೆಗಳಿಗೆ ಬದ್ಧನಾಗಿರುತ್ತೇನೆ.</p>
+            
+            <table class="borderless-table">
+                <tr>
+                    <td>ದಿನಾಂಕ: <input type="text" class="inline-input" style="width: 120px;"></td>
+                    <td style="text-align: right;"><br>___________________________<br><strong>(ಸರ್ಕಾರಿ ನೌಕರನ ಸಹಿ)</strong></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="declaration-block" style="margin-top: 25px;">
+            <h3>FORM: A2 - ಪತಿ ಅಥವಾ ಪತ್ನಿ ಸರ್ಕಾರಿ ನೌಕರರಾಗಿದ್ದಲ್ಲಿ ಮಾಡಬೇಕಾದ ಸ್ವಯಂ ಘೋಷಣೆ</h3>
+            <p>ಶ್ರೀ/ಶ್ರೀಮತಿ <input type="text" class="inline-input" style="width: 250px;"> ಇವರ ಪತಿ/ಪತ್ನಿ ಆದ ನಾನು ನನ್ನ ಸ್ವಂತಕ್ಕೆ ಅಥವಾ ನನ್ನ ಕುಟುಂಬದ ಯಾವುದೇ ಸದಸ್ಯರ ಸಂಬಂಧ ಯಾವುದೇ ಆರೋಗ್ಯ ವಿಮೆ ಅಥವಾ ಆರೋಗ್ಯ ಯೋಜನೆಯಡಿ ವೈದ್ಯಕೀಯ ಸೌಲಭ್ಯಗಳಿಗೆ ಒಳಪಟ್ಟಿರುವುದಿಲ್ಲ. ಹಾಗೂ KASS ಯೋಜನೆಯ ಸೌಲಭ್ಯಗಳನ್ನು ಇನ್ನಾವುದೇ ಮೂಲಗಳಿಂದ ಹಿಂಬರಿಸಿಕೊಳ್ಳುವುದಿಲ್ಲ.</p>
+            
+            <table class="borderless-table">
+                <tr>
+                    <td>ದಿನಾಂಕ: <input type="text" class="inline-input" style="width: 120px;"></td>
+                    <td style="text-align: right;"><br>___________________________<br><strong>(ಸರ್ಕಾರಿ ನೌಕರನ ಸಹಿ)</strong></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer-meta">
+            <span>KASS - Form A1 & A2 Declarations</span>
+            <span class="prepared-by">Prepared by : LAKSHMIKANTH R (Mob:9844444871)</span>
+        </div>
+    </div>
+
+    <!-- ================= PAGE 4: FORM A3 ================= -->
+    <div class="a4-page page-break">
+        <div class="declaration-block">
+            <h3>FORM: A3 - ತಂದೆ, ತಾಯಿ, ಪತಿ/ಪತ್ನಿ ಹಾಗೂ ಮಕ್ಕಳ ಅವಲಂಬನೆಯ ಸ್ವಯಂ ಘೋಷಣೆ</h3>
+            
+            <p><strong>ಎ.</strong> ನನ್ನ ತಂದೆ/ತಾಯಿ ನನ್ನ ಜೊತೆ ವಾಸಿಸುತ್ತಿದ್ದು ನನ್ನ ಮೇಲೆ ಅವಲಂಬಿತರಾಗಿದ್ದಾರೆ ಮತ್ತು ಅವರ ಒಟ್ಟು ಮಾಸಿಕ ಆದಾಯ ರೂ. <input type="text" class="inline-input" style="width: 100px;"> /- ಆಗಿರುತ್ತದೆ.</p>
+            <div class="signature-block-small"><p>(ಸರ್ಕಾರಿ ನೌಕರನ ಸಹಿ): ___________________________</p></div>
+            <hr>
+
+            <p><strong>ಬಿ.</strong> ನನ್ನ ಪತ್ನಿ/ಪತಿ ಆದ ಶ್ರೀ/ಶ್ರೀಮತಿ <input type="text" class="inline-input" style="width: 200px;"> ಇವರು ನನ್ನ ಜೊತೆ ವಾಸಿಸುತ್ತಿದ್ದು, ಯಾವುದೇ ಉದ್ಯೋಗ ಹಾಗೂ ಆದಾಯ ಹೊಂದಿರುವುದಿಲ್ಲ.</p>
+            <div class="signature-block-small"><p>(ಸರ್ಕಾರಿ ನೌಕರನ ಸಹಿ): ___________________________</p></div>
+            <hr>
+
+            <p><strong>ಸಿ.</strong> ನನ್ನ ಮಗ/ಮಗಳು <input type="text" class="inline-input" style="width: 200px;"> ಇವರು ನನ್ನ ಜೊತೆ ವಾಸಿಸುತ್ತಿದ್ದು, ಅವಿವಾಹಿತರಾಗಿದ್ದು ಯಾವುದೇ ಉದ್ಯೋಗ ಹೊಂದಿರುವುದಿಲ್ಲ.</p>
+            <div class="signature-block-small"><p>(ಸರ್ಕಾರಿ ನೌಕರನ ಸಹಿ): ___________________________</p></div>
+            <hr>
+
+            <p><strong>ಡಿ.</strong> ನನ್ನ ಇತರ ಮಕ್ಕಳು ನನ್ನ ಜೊತೆ ವಾಸಿಸುತ್ತಿದ್ದು, ನನ್ನ ಮೇಲೆಯೇ ಸಂಪೂರ್ಣ ಅವಲಂಬಿತರಾಗಿದ್ದಾರೆ ಎಂದು ಘೋಷಿಸುತ್ತೇನೆ.</p>
+            <div class="signature-block-small"><p>(ಸರ್ಕಾರಿ ನೌಕರನ ಸಹಿ): ___________________________</p></div>
+        </div>
+
+        <div class="footer-meta">
+            <span>KASS - Form A3 Dependents Declaration</span>
+            <span class="prepared-by">Prepared by : LAKSHMIKANTH R (Mob:9844444871)</span>
+        </div>
+    </div>
+
+    <!-- ================= PAGE 5: FORM A4 ================= -->
+    <div class="a4-page page-break">
+        <div class="header">
+            <h2>FORM: A4</h2>
+            <h4>ಕುಟುಂಬದ ಸದಸ್ಯರಲ್ಲಿ ಯಾವುದೇ ಬದಲಾವಣೆಯಾದಾಗ ಹೆಸರು ಸೇರಿಸಲು ಮತ್ತು ತೆಗೆದುಹಾಕಲು (Addition & Deletion)</h4>
+        </div>
+
+        <table class="kass-table">
+            <tr>
+                <td style="width: 35%;">ಸರ್ಕಾರಿ ನೌಕರನ ಹೆಸರು & ಪದನಾಮ</td>
+                <td><input type="text" value="LAKSHMIKANTH R"></td>
+            </tr>
+            <tr>
+                <td>ಸೇವೆ ಸಲ್ಲಿಸುತ್ತಿರುವ ಕಚೇರಿ</td>
+                <td><input type="text" value=""></td>
+            </tr>
+            <tr>
+                <td>KASS ಕಾರ್ಡ್ ಸಂಖ್ಯೆ</td>
+                <td><input type="text" value=""></td>
+            </tr>
+            <tr>
+                <td>ತೆಗೆದುಹಾಕಬೇಕಾದ ಸದಸ್ಯರ ವಿವರಣೆ (Deletion)</td>
+                <td><textarea rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <td>ಸೇರ್ಪಡೆ ಮಾಡಬೇಕಾದ ಸದಸ್ಯರ ವಿವರಣೆ (Addition)</td>
+                <td><textarea rows="2"></textarea></td>
+            </tr>
+        </table>
+
+        <table class="borderless-table" style="margin-top: 40px;">
+            <tr>
+                <td>ದಿನಾಂಕ: <input type="text" class="inline-input" style="width: 120px;"></td>
+                <td style="text-align: right;"><br>___________________________<br><strong>(ಸರ್ಕಾರಿ ನೌಕರನ ಸಹಿ)</strong></td>
+            </tr>
+        </table>
+
+        <div class="footer-meta">
+            <span>KASS - Form A4 Addition & Deletion</span>
+            <span class="prepared-by">Prepared by : LAKSHMIKANTH R (Mob:9844444871)</span>
+        </div>
+    </div>
+
+    <!-- ================= PAGE 6: FORM B ================= -->
+    <div class="a4-page page-break">
+        <div class="header">
+            <h2>FORM: B</h2>
+            <h4>ಸರ್ಕಾರಿ ನೌಕರರ ಕಚೇರಿ ಮುಖ್ಯಸ್ಥ / ವರದಿ ಮಾಡಿಕೊಳ್ಳುವ ಅಧಿಕಾರಿ ಸಲ್ಲಿಸಬೇಕಾದ ದೃಢೀಕರಣ ಪ್ರಮಾಣ ಪತ್ರ</h4>
+        </div>
+
+        <p class="declaration-text" style="font-size: 11px; margin-bottom: 8px;">
+            ಕರ್ನಾಟಕ ಆರೋಗ್ಯ ಸಂಜೀವಿನಿ ಯೋಜನೆಗೆ ಒಳಪಡಲು ಅರ್ಜಿ ಸಲ್ಲಿಸಿರುವ ಶ್ರೀ/ಶ್ರೀಮತಿ <input type="text" class="inline-input" value="LAKSHMIKANTH R" style="width: 220px;"> ಇವರು ಒದಗಿಸಿರುವ ದಾಖಲೆಗಳನ್ನು ಯೋಜನೆಯ ಮಾರ್ಗಸೂಚಿಗಳನ್ವಯ ಪರಿಶೀಲಿಸಲಾಗಿದ್ದು, ಈ ಸರ್ಕಾರಿ ನೌಕರರು ಮತ್ತು ಕೆಳಕಂಡ ಅವರ ಕುಟುಂಬದ ಸದಸ್ಯರು ಯೋಜನೆಗೆ ಒಳಪಡಲು ಅರ್ಹರಿರುತ್ತಾರೆ ಎಂದು ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ.
+        </p>
+
+        <h4 style="margin: 4px 0;">ಅರ್ಹ ಕುಟುಂಬದ ಸದಸ್ಯರ ವಿವರಗಳು:</h4>
+        <table class="kass-table tall-row-table" id="formBTable">
+            <thead>
+                <tr>
+                    <th style="width: 6%;">ಕ್ರ.ಸಂ</th>
+                    <th style="width: 44%;">ಕುಟುಂಬದ ಸದಸ್ಯರ ಹೆಸರು</th>
+                    <th style="width: 30%;">ಸರ್ಕಾರಿ ನೌಕರರೊಂದಿಗೆ ಸಂಬಂಧ</th>
+                    <th style="width: 20%;">ಷರಾ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text"></td></tr>
+                <tr><td>2</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text"></td></tr>
+                <tr><td>3</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text"></td></tr>
+                <tr><td>4</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text"></td></tr>
+                <tr><td>5</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text"></td></tr>
+                <tr><td>6</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text"></td></tr>
+                <tr><td>7</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text"></td></tr>
+                <tr><td>8</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text"></td></tr>
+            </tbody>
+        </table>
+
+        <table class="kass-table compact-table" style="margin-top: 10px;">
+            <tr>
+                <td style="width: 35%;">ಸರ್ಕಾರಿ ನೌಕರನ ಹೆಸರು & ಪದನಾಮ</td>
+                <td><input type="text" value="LAKSHMIKANTH R"></td>
+            </tr>
+            <tr>
+                <td>ಕಚೇರಿ ವಿವರಗಳು / ವಿಳಾಸ</td>
+                <td><textarea rows="1"></textarea></td>
+            </tr>
+            <tr>
+                <td>ವರದಿ ಮಾಡುವ ಅಧಿಕಾರಿಯ ಹೆಸರು & ಪದನಾಮ</td>
+                <td><input type="text" value=""></td>
+            </tr>
+        </table>
+
+        <table class="borderless-table" style="margin-top: 15px;">
+            <tr>
+                <td>ದಿನಾಂಕ: <input type="text" class="inline-input" style="width: 120px;"></td>
+                <td style="text-align: right;"><br>___________________________<br><strong>ವರದಿ ಮಾಡುವ ಅಧಿಕಾರಿಯ ಸಹಿ & ಮೊಹರು</strong></td>
+            </tr>
+        </table>
+
+        <div class="footer-meta">
+            <span>KASS - Form B Certification</span>
+            <span class="prepared-by">Prepared by : LAKSHMIKANTH R (Mob:9844444871)</span>
+        </div>
+    </div>
+
+    <!-- ================= PAGE 7: FORM C ================= -->
+    <div class="a4-page page-break">
+        <div class="header">
+            <h2>FORM: C</h2>
+            <h4>ಡಿ.ಡಿ.ಓ. (DDO) ಗಳು ಸಲ್ಲಿಸಬೇಕಾದ ಘೋಷಣೆ / ಪ್ರಮಾಣ ಪತ್ರ</h4>
+        </div>
+
+        <table class="kass-table compact-table">
+            <tr>
+                <td style="width: 35%;">01. ಸರ್ಕಾರಿ ನೌಕರನ ಹೆಸರು</td>
+                <td><input type="text" value="LAKSHMIKANTH R"></td>
+            </tr>
+            <tr>
+                <td>02. ಪದನಾಮ</td>
+                <td><input type="text" value=""></td>
+            </tr>
+            <tr>
+                <td>03. ಪ್ರಥಮ ಕೆಜಿಐಡಿ ಸಂಖ್ಯೆ</td>
+                <td><input type="text" value="1958636"></td>
+            </tr>
+            <tr>
+                <td>04. ಕಚೇರಿ / ಶಾಲಾ ಪೂರ್ಣ ವಿಳಾಸ</td>
+                <td><textarea rows="1"></textarea></td>
+            </tr>
+        </table>
+
+        <h4 style="margin: 4px 0;">ದೃಢೀಕರಿಸಲ್ಪಟ್ಟ ಅವಲಂಬಿತರ ವಿವರಗಳು:</h4>
+        <table class="kass-table tall-row-table" id="formCTable">
+            <thead>
+                <tr>
+                    <th style="width: 5%;">ಕ್ರ.ಸಂ</th>
+                    <th style="width: 25%;">ಅವಲಂಬಿತರ ಹೆಸರು</th>
+                    <th style="width: 18%;">ಸಂಬಂಧ</th>
+                    <th style="width: 17%;">ಜನ್ಮ ದಿನಾಂಕ (DD/MM/YYYY)</th>
+                    <th style="width: 15%;">ವೈವಾಹಿಕ ಸ್ಥಿತಿ</th>
+                    <th style="width: 20%;">ಆಧಾರ್ ಸಂಖ್ಯೆ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+                <tr><td>2</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+                <tr><td>3</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+                <tr><td>4</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+                <tr><td>5</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+                <tr><td>6</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+                <tr><td>7</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+                <tr><td>8</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+                <tr><td>9</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+                <tr><td>10</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+            </tbody>
+        </table>
+
+        <table class="borderless-table" style="margin-top: 15px;">
+            <tr>
+                <td>ದಿನಾಂಕ: <input type="text" class="inline-input" style="width: 120px;"></td>
+                <td style="text-align: right;"><br>___________________________<br><strong>DDO ಸಹಿ ಮತ್ತು ಸೀಲು</strong></td>
+            </tr>
+        </table>
+
+        <div class="footer-meta">
+            <span>KASS - Form C DDO Certificate</span>
+            <span class="prepared-by">Prepared by : LAKSHMIKANTH R (Mob:9844444871)</span>
+        </div>
+    </div>
+
+    <!-- ================= PAGE 8: ANUBANDHA-2 ================= -->
+    <div class="a4-page page-break">
+        <div class="header">
+            <h3>ಅನುಬಂಧ-2 (ನಮೂನೆ-2)</h3>
+            <h2>KASS ಯೋಜನೆಯಿಂದ ಹೊರಗುಳಿಯುವ ಸ್ವಯಂ ಘೋಷಣೆ (Opt-Out Form)</h2>
+        </div>
+
+        <table class="kass-table">
+            <tr><td style="width: 35%;">01. ಹೆಸರು</td><td><input type="text" value="LAKSHMIKANTH R"></td></tr>
+            <tr><td>02. ಪದನಾಮ</td><td><input type="text" value=""></td></tr>
+            <tr><td>03. ಪ್ರಥಮ ಕೆಜಿಐಡಿ ಸಂಖ್ಯೆ</td><td><input type="text" value="1958636"></td></tr>
+            <tr><td>04. ಇಲಾಖೆಯ ಹೆಸರು</td><td><input type="text" value=""></td></tr>
+            <tr><td>05. ಕಚೇರಿ / ಶಾಲಾ ವಿಳಾಸ</td><td><input type="text" value=""></td></tr>
+            <tr><td>06. ವೃಂದ (A, B, C or D)</td><td><input type="text" value=""></td></tr>
+        </table>
+
+        <p class="declaration-text" style="line-height: 1.8;">
+            ಶ್ರೀ/ಶ್ರೀಮತಿ <input type="text" class="inline-input" value="LAKSHMIKANTH R" style="width: 250px;"> ಆದ ನಾನು 
+            ನನ್ನ ಪತಿ/ಪತ್ನಿ ಇತರ ಸರ್ಕಾರಿ/ಖಾಸಗಿ ಸೇವೆಯಲ್ಲಿದ್ದು ವೈದ್ಯಕೀಯ ಸೌಲಭ್ಯ ಪಡೆಯುತ್ತಿರುವುದರಿಂದ, ನಗದು ರಹಿತ <strong>"ಕರ್ನಾಟಕ ಆರೋಗ್ಯ ಸಂಜೀವಿನಿ ಯೋಜನೆ" (KASS)</strong> ಗೆ ಒಳಪಡಲು ಇಚ್ಛಿಸುವುದಿಲ್ಲ. ಆದಕಾರಣ ನನ್ನ ವೇತನದಲ್ಲಿ ಮಾಸಿಕ ವಂತಿಕೆಯನ್ನು ಕಟಾವಣೆ ಮಾಡಬಾರದೆಂದು ಕೋರುತ್ತೇನೆ.
+        </p>
+
+        <table class="borderless-table" style="margin-top: 50px;">
+            <tr>
+                <td>ರವರಿಗೆ:<br><strong>ಮುಖ್ಯ ಶಿಕ್ಷಕರು / ಕಚೇರಿ ಮುಖ್ಯಸ್ಥರು</strong></td>
+                <td style="text-align: right;"><br>___________________________<br><strong>(ಸರ್ಕಾರಿ ನೌಕರನ ಸಹಿ)</strong></td>
+            </tr>
+        </table>
+
+        <div class="footer-meta">
+            <span>KASS - Opt-Out Form</span>
+            <span class="prepared-by">Prepared by : LAKSHMIKANTH R (Mob:9844444871)</span>
+        </div>
+    </div>
+
+    <!-- ================= PAGE 9: SUMMARY SHEET ================= -->
+    <div class="a4-page page-break">
+        <div class="header">
+            <h2>ಕರ್ನಾಟಕ ಆರೋಗ್ಯ ಸಂಜೀವಿನಿ ಯೋಜನೆ (KASS)</h2>
+            <h4>ಸರ್ಕಾರಿ ನೌಕರನ ಹಾಗೂ ಅವಲಂಬಿತರ ಒಟ್ಟಾರೆ ವಿವರಗಳ ಪಟ್ಟಿ (Summary Sheet)</h4>
+        </div>
+
+        <table class="kass-table compact-table">
+            <tr><td style="width: 35%;">01. ಹೆಸರು</td><td><input type="text" value="LAKSHMIKANTH R"></td></tr>
+            <tr><td>02. ಪದನಾಮ & ವಿಳಾಸ</td><td><input type="text" value=""></td></tr>
+            <tr><td>03. ಕೆಜಿಐಡಿ ಸಂಖ್ಯೆ</td><td><input type="text" value="1958636"></td></tr>
+            <tr><td>04. ಆಧಾರ್ ಸಂಖ್ಯೆ</td><td><input type="text" value="491287273375"></td></tr>
+            <tr><td>05. ಜನ್ಮ ದಿನಾಂಕ (DD/MM/YYYY)</td><td><input type="text" placeholder="DD/MM/YYYY"></td></tr>
+            <tr><td>06. ವಾಸಸ್ಥಳದ ವಿಳಾಸ</td><td><textarea rows="1"></textarea></td></tr>
+            <tr><td>07. ಈ-ಮೇಲ್ ಐಡಿ & ಮೊಬೈಲ್</td><td><input type="text" value="9844444871"></td></tr>
+        </table>
+
+        <h4 style="margin: 4px 0;">ಅವಲಂಬಿತರ ಪೂರ್ಣ ಪಟ್ಟಿ:</h4>
+        <table class="kass-table tall-row-table" id="summaryTable">
+            <thead>
+                <tr>
+                    <th style="width: 5%;">ಕ್ರ.ಸಂ</th>
+                    <th style="width: 25%;">ಅವಲಂಬಿತರ ಹೆಸರು</th>
+                    <th style="width: 15%;">ಸಂಬಂಧ</th>
+                    <th style="width: 17%;">ಜನ್ಮ ದಿನಾಂಕ (DD/MM/YYYY)</th>
+                    <th style="width: 13%;">ವೈವಾಹಿಕ ಸ್ಥಿತಿ</th>
+                    <th style="width: 25%;">ಆಧಾರ್ ಸಂಖ್ಯೆ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+                <tr><td>2</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+                <tr><td>3</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+                <tr><td>4</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+                <tr><td>5</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+                <tr><td>6</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+                <tr><td>7</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+                <tr><td>8</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+                <tr><td>9</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+                <tr><td>10</td><td><input type="text" readonly></td><td><input type="text" readonly></td><td><input type="text" placeholder="DD/MM/YYYY" readonly></td><td><input type="text"></td><td><input type="text" readonly></td></tr>
+            </tbody>
+        </table>
+
+        <table class="borderless-table" style="margin-top: 15px;">
+            <tr>
+                <td>ದಿನಾಂಕ: <input type="text" class="inline-input" style="width: 120px;"></td>
+                <td style="text-align: right;"><br>___________________________<br><strong>(ಸರ್ಕಾರಿ ನೌಕರನ ಸಹಿ)</strong></td>
+            </tr>
+        </table>
+
+        <div class="footer-meta">
+            <span>KASS - Summary Master Sheet</span>
+            <span class="prepared-by">Prepared by : LAKSHMIKANTH R (Mob:9844444871)</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
